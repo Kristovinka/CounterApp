@@ -1,6 +1,6 @@
 const plusButton = document.querySelector('.plusPointBtn');
-const result = document.querySelector('result');
-const minusButton = document.querySelector('minusPointBtn');
+const result = document.querySelector('.result');
+const minusButton = document.querySelector('.minusPointBtn');
 
 let couterValue = 0;
 
