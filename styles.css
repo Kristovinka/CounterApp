@@ -11,16 +11,41 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: 18px;
 }
 
-#root {
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% {opacity: 1}
+    50% {opacity: 0.5};
+}
+
+.buttons-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
     text-align: center;
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
+    margin-top: 10px;
 }
 
 button {
@@ -30,7 +55,8 @@ button {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
+    width: 220px;
+    font-size: 18px;
 }
 
 button:hover {
