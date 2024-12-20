@@ -1,16 +1,17 @@
 const plusButton = document.querySelector('.plusPointBtn');
-const result = document.querySelector('result');
-const minusButton = document.querySelector('minusPointBtn');
+const result = document.querySelector('.result');
+const minusButton = document.querySelector('.minusPointBtn');
 
 let couterValue = 0;
 
 const increaseCounter = () => {
-    couterValue --;
+    couterValue ++;
     document.querySelector('result').textContent = couterValue;
 }
 
 const decreaseCounter = () => {
-
+    couterValue --;
+    document.querySelector('result').textContent = couterValue;
 }
 
 plusButton.addEventListener('click', increaseCounter);
