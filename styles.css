@@ -57,9 +57,27 @@ button {
     cursor: pointer;
     width: 220px;
     font-size: 18px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background: #0056b3;
+    transform: scale(1.1);
 }
 
+.result {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.result:hover {
+    background: #e0e0e0;
+    border-radius: 8px;
+}
+
+button:active {
+    background: #004085;
+    transform: scale(1); 
+}
